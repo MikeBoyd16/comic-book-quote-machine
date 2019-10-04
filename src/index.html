@@ -7,6 +7,56 @@
     </head>
 
     <body>
+        <img id="title" src="https://i.imgur.com/3eTteIE.png">
+        <img id="quote_box" src="https://i.imgur.com/K6JgjXe.png">
+        <p id="quote_text">Message will go here.</p>
+        
+        <div id="buttons">
+          <button id = "getQuote" class = "btn">
+              Get Quote
+          </button>
+          <button id = "tweet" class = "btn">
+              Tweet
+            </button>
+        </div>
 
+        <script>
+            var quoteCollection = {
+                "Batman" : 
+                {
+                    "quote1" : "1",
+                    "quote2" : "2",
+                    "quote3" : "3"
+                },
+                "Superman" : 
+                {
+                    "quote1" : "4",
+                    "quote2" : "5",
+                    "quote3" : "6"
+                },
+                "Spiderman" : 
+                {
+                    "quote1" : "7",
+                    "quote2" : "8",
+                    "quote3" : "9"
+                }
+            };
+
+            var keyArray1 = Object.keys(quoteCollection);
+            var randomKey1 = 0;
+            var randomKey2 = 0;
+            var randomQuote = "";
+
+            $('#getQuote').on("click", function() {
+                $('#quote_text').html('Here is the message!');
+                randomKey1 = Math.floor(Math.random * keyArray.length);
+                
+                var keyArray2 = Object.keys(quoteCollection[randomKey1]);
+                
+                randomKey2 = Math.floor(Math.random * keyArray2.length);
+                
+                randomQuote = quoteCollection[randomKey1[randomKey2]]
+            });
+        </script>
     </body>
 </html>
