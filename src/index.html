@@ -17,7 +17,13 @@
 
         <script>
             function displayQuote() {
-                var quotes = ["Quote 1", "Quote 2", "Quote 3", "Quote 4", "Quote 5"];
+                var quotes = [
+                    "True happiness is found along a middle road. There lies the balance and the harmony-- with reason and emotion, not at war but hand in hand", 
+                    "This is saying our generation will never matter. But we have to matter. If we don't, there is no future worth saving.", 
+                    "A true Defender never raises arms against an innocent, no matter how they threaten you.", 
+                    "The future is worth it. All the pain. All the tears. The future is worth the fight.", 
+                    "We are Groot"
+                ];
                 var quoteIndex = Math.floor(Math.random() * quotes.length);
                 var quoteArea = document.getElementById("quote-text");
                 quoteArea.innerText = quotes[quoteIndex];
