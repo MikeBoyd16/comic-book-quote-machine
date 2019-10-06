@@ -10,48 +10,18 @@
         <img id="title" src="images/title.png">
 
         <div id="action-bubble">
-            <p id="quote-text">Message will go here</p>
+            <p id="quote-text"></p>
         </div>
         
-        <div id="get-quote">Get Quote</div>
+        <div id="get-quote" onClick="displayQuote()">Get Quote</div>
 
         <script>
-            var quoteCollection = {
-                "Batman" : 
-                {
-                    "quote1" : "1",
-                    "quote2" : "2",
-                    "quote3" : "3"
-                },
-                "Superman" : 
-                {
-                    "quote1" : "4",
-                    "quote2" : "5",
-                    "quote3" : "6"
-                },
-                "Spiderman" : 
-                {
-                    "quote1" : "7",
-                    "quote2" : "8",
-                    "quote3" : "9"
-                }
-            };
-
-            var keyArray1 = Object.keys(quoteCollection);
-            var randomKey1 = 0;
-            var randomKey2 = 0;
-            var randomQuote = "";
-
-            $('#getQuote').on("click", function() {
-                $('#quote_text').html('Here is the message!');
-                randomKey1 = Math.floor(Math.random * keyArray.length);
-                
-                var keyArray2 = Object.keys(quoteCollection[randomKey1]);
-                
-                randomKey2 = Math.floor(Math.random * keyArray2.length);
-                
-                randomQuote = quoteCollection[randomKey1[randomKey2]]
-            });
+            function displayQuote() {
+                var quotes = ["Quote 1", "Quote 2", "Quote 3", "Quote 4", "Quote 5"];
+                var quoteIndex = Math.floor(Math.random() * quotes.length);
+                var quoteArea = document.getElementById("quote-text");
+                quoteArea.innerText = quotes[quoteIndex];
+            }
         </script>
     </body>
 </html>
