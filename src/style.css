@@ -47,19 +47,12 @@ body {
   font-size: 20px;
 }
 
-#buttons {
-  margin: auto;
+#get-quote {
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
   text-align: center;
-  margin-left: -50px;
-}
-
-#getQuote {
-  margin-left: 5px;
-  margin-right: 10px;
   padding: 15px 40px 15px 40px;
-}
-
-#tweet {
-  margin-left: 0px;
-  padding: 15px 40px 15px 40px;
+  background-color: red;
+  color: white;
 }
