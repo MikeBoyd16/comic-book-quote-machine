@@ -1,26 +1,50 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
 html {
-  width: 100vw;
-  height: 100vh;
+  background: url("images/background.png");
   background-size: cover;
-  background-image: url("images/background.png");
+  background-repeat: no-repeat;
 }
 
 body {
     width: 50vw;
     height: 50vh;
+    margin: 0 auto;
 }
 
 #title {
   display: block;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 15vh;
 }
 
-#quote_box {
-  z-index: 0;
-  display: block;
-  margin: auto;
-  margin-top: -20px;
+#action-bubble {
+  margin: 0 auto;
+  height: 31vh;
+  width: 10vw;
+  min-width: 550px;
+  min-height: 400px;
+  display: fixed;
+  text-align: center;
+  background: url('images/action-bubble.png') no-repeat center;
+  border: rgba(0, 0, 0, 0) 1px solid;
+}
+
+#quote-text {
+  width: 10vw;
+  height: 3vh;
+  max-width: 275px;
+  max-height: 125px;
+  margin: 0 auto;
+  margin-top: 125px;
+  color: #cc0000;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 #buttons {
@@ -35,24 +59,7 @@ body {
   padding: 15px 40px 15px 40px;
 }
 
-#quote_text {
-  z-index: 1;
-  text-align: center;
-  margin-top: -290px;
-  margin-bottom: 280px;
-  margin-right: 50px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 20px;
-  color: #cc0000;
-}
-
 #tweet {
   margin-left: 0px;
   padding: 15px 40px 15px 40px;
-}
-
-button {
-
 }
