@@ -11,23 +11,21 @@ html {
 }
 
 body {
-  width: 50vw;
-  height: 50vh;
+  width: 100vw;
+  height: 100vh;
   margin: 0 auto;
 }
 
 #title {
   display: block;
   margin: auto;
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 
 #action-bubble {
+  width: 550px;
+  height: 415px;
   margin: 0 auto;
-  height: 31vh;
-  width: 10vw;
-  min-width: 550px;
-  min-height: 400px;
   display: fixed;
   text-align: center;
   background: url('images/action-bubble.png') no-repeat center;
@@ -37,7 +35,7 @@ body {
 #quote-text {
   width: 400px;
   height: 100px;
-  margin-top: 105px;
+  margin-top: 100px;
   margin-left: 65px;
   padding-top: 0px;
   color: #cc0000;
