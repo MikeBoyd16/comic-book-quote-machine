@@ -11,9 +11,9 @@ html {
 }
 
 body {
-    width: 50vw;
-    height: 50vh;
-    margin: 0 auto;
+  width: 50vw;
+  height: 50vh;
+  margin: 0 auto;
 }
 
 #title {
@@ -37,8 +37,8 @@ body {
 #quote-text {
   width: 400px;
   height: 100px;
-  margin: 0 auto;
   margin-top: 105px;
+  margin-left: 65px;
   padding-top: 0px;
   color: #cc0000;
   font-style: italic;
@@ -47,11 +47,39 @@ body {
 }
 
 #get-quote {
-  width: 100px;
+  width: 110px;
+  font-size: 20px;
+  font-weight: bold;
   margin: 0 auto;
   margin-top: 50px;
   text-align: center;
   padding: 15px 40px 15px 40px;
-  background-color: red;
-  color: white;
+  background-color: rgb(251, 194, 0);
+  color: rgb(193, 39, 45);
+  border-width: 4px;
+  border-color: rgb(193, 39, 45);
+  border-radius:2rem;
+  border-style: solid;
+  box-shadow: 
+      0px 1px 5px 0px rgba(0,0,0,0.2), 
+      0px 2px 2px 0px rgba(0,0,0,0.14), 
+      0px 3px 1px -2px rgba(0,0,0,0.12);
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+#get-quote:hover {
+  color: rgb(251, 194, 0);
+  background-color: rgb(193, 39, 45);
+  border-color: rgb(251, 194, 0);
+}
+
+#get-quote:active {
+  width: 90px;
+  height: 20px;
+  margin-top: 55px;
+  font-size: 16px;
 }
