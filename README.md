@@ -1,4 +1,4 @@
-<p align="center"><img src="/src/images/title.png" align="middle" width="500px" /></p>
+<p align="center"><img src="/src/images/title.png" align="middle" width="600px" /></p>
 <p align="center">Notable quotes by comic book characters</p>
 <h2>Availability</h2>
 <a href="https://mikeboyd16.github.io/comic-book-quote-machine/">Live demo</a>
